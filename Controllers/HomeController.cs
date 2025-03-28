@@ -23,7 +23,7 @@ namespace WebAppMVC.Controllers
         {
             if (id == null)
             {
-                return RedirectToAction("Index"); // Redirect if ID is missing
+                return RedirectToAction("Index"); // Added By Tejas
             }
 
             Registration registration = SDal.GetStudentById(id.Value); // Use id.Value safely
